@@ -16,7 +16,7 @@ public class HomeController {
     @Autowired
     private Environment env;
 
-    @RequestMapping("/images")
+    @RequestMapping(value = {"/", "images"})
     public List<Image> getImages() {
         List<Image> images = Arrays.asList(
                 new Image(1, "Treehouse of Horror V", "https://www.imdb.com/title/tt0096697/mediaviewer/rm3842005760"),
